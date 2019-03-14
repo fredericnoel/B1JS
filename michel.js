@@ -1,14 +1,9 @@
-function Etudiant(first, name, age) {
-    this.prenom = first;
-    this.nom = name;
-    this.age = age;
-}
+let michel = "Michel à la plage";
 
-var etudiant1 = new Etudiant("Auchecorne", "Michel", 47);
+alert(michel.charAt(3));
 
-var etudiant2 = etudiant1;
+var lettre = michel.indexOf("l");
 
-etudiant2.prenom = "Gerard";
+var resultat = michel.replace("plage", "mer");
 
-alert(etudiant2.prenom);
-alert(etudiant1.prenom);
+var truc = michel.slice(0, 5);
