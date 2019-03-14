@@ -1,7 +1,10 @@
-var etudiant = new Object();
+var etudiant = {
+    nom : "Auchecorne",
+    prenom : "Michel",
+    age : 47,
+    getInfo : function() {
+        return "Je m'appelle " + this.prenom;
+    }
+};
 
-etudiant.nom = "Auchecorne";
-etudiant.prenom = "Michel";
-etudiant.age = 47;
-
-alert(etudiant.prenom);
+alert(etudiant.getInfo());
