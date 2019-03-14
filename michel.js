@@ -1,12 +1,16 @@
-function getResult() {
-    return this.rayon * 2 * Math.PI * this.hauteur;
-}
+var tab = new Array();
 
-function Cylindre(r, h) {
-    this.rayon = r;
-    this.hauteur = h;
-    this.resultat = getResult;
-}
+tab.push("Michel");
+tab.push("Bob");
+tab.unshift("Brigite");
+tab.sort();
 
-var machin = new Cylindre(32,76);
-alert(machin.resultat());
+
+var resultat = "<ul>";
+for(var i = 0 ; i < tab.length ; i++) {
+    resultat += "<li>";
+    resultat += tab[i];
+    resultat += "</li>";
+}
+resultat += "</ul>";
+document.write(resultat);
