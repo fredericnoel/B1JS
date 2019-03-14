@@ -1,0 +1,31 @@
+@import "reset.css";
+
+body {
+    color: #000;
+    background: #FFF;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+p.centeredPicture {
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+form div {
+    margin: 0 0 20px;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+}

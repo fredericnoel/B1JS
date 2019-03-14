@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Je fais du JavaScript</title>
-    <script src="michel.js"></script>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/range.js"></script>
+    <script src="./assets/js/michel.js"></script>
+    <script src="./assets/js/functions.js "></script>
+    <script src="./assets/js/classe.js"></script>
 </head>
 <body>
-
+    <main>
+        <h1>Manges-tu comme un goret ?</h1>
+        <p class="centeredPicture">
+            <img src="./assets/img/gras.jpg" />
+        </p>
+        <form method="POST" action="/" id="form">
+            <div>
+                <label for="repas">Repas : </label>
+                <select id="repas">
+                    <option value="1" name="repas">Petit déjeuner</option>
+                    <option value="2" name="repas">Déjeuner</option>
+                    <option value="3" name="repas">Diner</option>
+                </select>
+            </div>
+            <div>
+                <label for="glucides">Pourcentage de glucides : </label>
+                <input id="glucides" name="glucides" class="range" type="range" min="0" max="100" step="1" />
+                <output></output>
+            </div>
+            <div>
+                <label for="lipides">Pourcentage de lipides : </label>
+                <input id="lipides" name="lipides" class="range" type="range" min="0" max="100" step="1" />
+                <output></output>
+            </div>
+            <div>
+                <label for="proteines">Pourcentage de protéines : </label>
+                <input id="proteines" name="proteines" class="range" type="range" min="0" max="100" step="1" />
+                <output></output>
+            </div>
+            <div>
+                <input type="submit" value="Même pas peur !" onclick="verifGras()" />
+            </div>
+        </form>
+    </main>
 </body>
 </html>
