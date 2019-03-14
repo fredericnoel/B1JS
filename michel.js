@@ -1,18 +1,12 @@
-var minimum = Number.MIN_VALUE;
-var maximum = Number.MAX_VALUE;
-var infiniMoins = Number.NEGATIVE_INFINITY;
-var infiniPlus = Number.POSITIVE_INFINITY;
-var truc = Number.NaN;
+function getResult() {
+    return this.rayon * 2 * Math.PI * this.hauteur;
+}
 
-var machin = 42.123456789;
+function Cylindre(r, h) {
+    this.rayon = r;
+    this.hauteur = h;
+    this.resultat = getResult;
+}
 
-machin = machin.toFixed(2);
-alert(machin);
-
-var bidon = 56.567890;
-bidon = bidon.toPrecision(3);
-alert(bidon);
-
-var michel = 42;
-var gerard = michel.toString();
-
+var machin = new Cylindre(32,76);
+alert(machin.resultat());
