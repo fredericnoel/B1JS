@@ -1,9 +1,18 @@
-let michel = "Michel à la plage";
+var minimum = Number.MIN_VALUE;
+var maximum = Number.MAX_VALUE;
+var infiniMoins = Number.NEGATIVE_INFINITY;
+var infiniPlus = Number.POSITIVE_INFINITY;
+var truc = Number.NaN;
 
-alert(michel.charAt(3));
+var machin = 42.123456789;
 
-var lettre = michel.indexOf("l");
+machin = machin.toFixed(2);
+alert(machin);
 
-var resultat = michel.replace("plage", "mer");
+var bidon = 56.567890;
+bidon = bidon.toPrecision(3);
+alert(bidon);
 
-var truc = michel.slice(0, 5);
+var michel = 42;
+var gerard = michel.toString();
+
